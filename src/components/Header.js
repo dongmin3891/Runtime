@@ -2,17 +2,24 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-      <div className="title">
-        <h1>Dong Dong Mall</h1>
-      </div>
-      <div className="itemList">
-        <button className="item_btn">모두보기</button>
-        <button className="item_btn">아우터</button>
-        <button className="item_btn">상의</button>
-        <button className="item_btn">하의</button>
-        <button className="item_btn">악세사리</button>
-      </div>
+    <div className="header">
+      <a href="#">
+        <h1 className="header_title">Shop</h1>
+      </a>
+      <ul>
+        <li>
+          <a href="">내 정보</a>
+        </li>
+        <li>
+          <a href="">상품</a>
+        </li>
+        <li>
+          <a href="">장바구니</a>
+        </li>
+        <li>
+          <a href="">게시판</a>
+        </li>
+      </ul>
     </div>
   );
 }
