@@ -3,6 +3,7 @@ import React from "react";
 function Header() {
   return (
     <div className="header">
+      {/* eslint-disable jsx-a11y/anchor-is-valid  */}
       <a href="#">
         <h1 className="header_title">Shop</h1>
       </a>
