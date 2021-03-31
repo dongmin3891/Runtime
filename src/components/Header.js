@@ -1,36 +1,50 @@
 import React from "react";
 import styled from "styled-components";
 
-const Navbar = styled.div`
-  background-color: black;
-  padding-top: 48px;
-  padding-left: 48px;
+const Navbar = styled.nav`
+  /* header 영역 전체 */
+  display: flex;
+  background-color: #383838;
+  padding: 18px;
+
+  /* header title */
   h1 {
-    color: red;
-    font-size: 34px;
+    color: orange;
+    font-size: 30px;
+    margin-right: 180px;
+    font-weight: bold;
   }
 
-  a {
+  /* header item_list */
+  ul {
+    display: flex;
+  }
+  li {
+    margin-right: 48px;
+    font-size: 20px;
+    padding-top: 7px;
+  }
+
+  li a {
     color: white;
   }
 
-  ul {
-  }
-  li {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 20px;
+  li a:hover {
+    color: orange;
+    transition: all 0.8s;
   }
 `;
 
 function Header() {
   return (
     <Navbar>
-      <div className="header">
+      <>
         {/* eslint-disable jsx-a11y/anchor-is-valid  */}
+
         <a href="#">
           <h1 className="header_title">Dong Dong Shop</h1>
         </a>
+
         <ul>
           <li>
             <a href="">내 정보</a>
@@ -45,7 +59,7 @@ function Header() {
             <a href="">게시판</a>
           </li>
         </ul>
-      </div>
+      </>
     </Navbar>
   );
 }
