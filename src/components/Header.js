@@ -2,16 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 const Navbar = styled.nav`
+  * {
+    box-sizing: border-box;
+  }
+
   /* header 영역 전체 */
   display: flex;
   background-color: #383838;
   padding: 18px;
 
+  .title_anker {
+    margin-right: 120px;
+  }
+
   /* header title */
+
   h1 {
     color: orange;
     font-size: 30px;
-    margin-right: 180px;
     font-weight: bold;
   }
 
@@ -41,7 +49,7 @@ function Header() {
       <>
         {/* eslint-disable jsx-a11y/anchor-is-valid  */}
 
-        <a href="#">
+        <a className="title_anker" href="#">
           <h1 className="header_title">Dong Dong Shop</h1>
         </a>
 
