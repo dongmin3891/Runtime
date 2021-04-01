@@ -1,15 +1,17 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
-import styled from "styled-components";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
+import Admin from "./Components/Admin";
+import { Route } from "react-router";
 
 function App() {
   return (
     <div>
       <GlobalStyles />
-      <Header />
-      <Main />
+      <Route path="/" component={Header} exact />
+      <Route path="/" component={Main} exact />
+      <Route path="/Admin" component={Admin} exact />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -44,7 +45,7 @@ const MainSection = styled.div`
     transition: all 0.8s;
   }
 
-  a {
+  .link {
     display: block;
     border: 2px solid #999;
     border-radius: 8px;
@@ -65,34 +66,30 @@ function Main() {
         {/* eslint-disable jsx-a11y/anchor-is-valid  */}
         <section className="main">
           <h2>홈</h2>
-
           <ul className="home_item">
             <li className="home_item1">
-              <a href="">
+              <Link to="/Admin" className="link">
                 <FontAwesomeIcon icon={faUser} size="3x" />
                 <h3>정보수정</h3>
-              </a>
+              </Link>
             </li>
             <li className="home_item1">
-              <a href="#">
+              <Link to="/" className="link">
                 <FontAwesomeIcon icon={faArchive} size="3x" />
-
                 <h3>상품보기</h3>
-              </a>
+              </Link>
             </li>
             <li className="home_item1">
-              <a href="#">
+              <Link to="/" className="link">
                 <FontAwesomeIcon icon={faShoppingCart} size="3x" />
-
                 <h3>장바구니</h3>
-              </a>
+              </Link>
             </li>
             <li className="home_item1">
-              <a href="#">
+              <Link to="/" className="link">
                 <FontAwesomeIcon icon={faBookOpen} size="3x" />
-
                 <h3>게시판</h3>
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

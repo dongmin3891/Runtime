@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Navbar = styled.nav`
   * {
@@ -33,11 +34,11 @@ const Navbar = styled.nav`
     padding-top: 7px;
   }
 
-  li a {
+  li .link {
     color: white;
   }
 
-  li a:hover {
+  li .link:hover {
     color: orange;
     transition: all 0.8s;
   }
@@ -55,16 +56,24 @@ function Header() {
 
         <ul>
           <li>
-            <a href="">내 정보</a>
+            <Link to="/Admin" className="link">
+              내 정보
+            </Link>
           </li>
           <li>
-            <a href="">상품</a>
+            <Link to="/" className="link">
+              상품
+            </Link>
           </li>
           <li>
-            <a href="">장바구니</a>
+            <Link to="/" className="link">
+              장바구니
+            </Link>
           </li>
           <li>
-            <a href="">게시판</a>
+            <Link to="/" className="link">
+              게시판
+            </Link>
           </li>
         </ul>
       </>
