@@ -50,9 +50,9 @@ function Header() {
       <>
         {/* eslint-disable jsx-a11y/anchor-is-valid  */}
 
-        <a className="title_anker" href="#">
+        <Link to="/" className="title_anker">
           <h1 className="header_title">Dong Dong Shop</h1>
-        </a>
+        </Link>
 
         <ul>
           <li>
