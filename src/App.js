@@ -9,9 +9,9 @@ function App() {
   return (
     <div>
       <GlobalStyles />
-      <Route path="/" component={Header} exact />
+      <Route path="/" component={Header} />
       <Route path="/" component={Main} exact />
-      <Route path="/Admin" component={Admin} exact />
+      <Route path="/Admin" component={Admin} />
     </div>
   );
 }
