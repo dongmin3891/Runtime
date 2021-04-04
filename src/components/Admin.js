@@ -1,10 +1,18 @@
 import React from "react";
-import Header from "./Components/Header";
 import styled from "styled-components";
 
 const AdminSection = styled.section`
+  margin: 120px 120px;
+
   * {
     box-sizing: border-box;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 3px solid #ff4e00;
+    margin: 20px 0 50px 20px;
+    padding-left: 15px;
   }
   div {
     display: flex;
@@ -32,17 +40,11 @@ const AdminSection = styled.section`
     display: none;
   }
 `;
-function Fiex(){
-    return(
-    <>
-        <Header/>
-    </>
-);}
+
 function Admin() {
   return (
-      {Fiex}
-    <AdminSection>
-      <>
+    <>
+      <AdminSection>
         <section>
           <h1>내 정보</h1>
           <div>
@@ -70,8 +72,8 @@ function Admin() {
             <button></button>
           </div>
         </section>
-      </>
-    </AdminSection>
+      </AdminSection>
+    </>
   );
 }
 
