@@ -7,6 +7,11 @@ const AdminSection = styled.section`
   * {
     box-sizing: border-box;
   }
+
+  form {
+    display: block;
+  }
+
   h1 {
     font-size: 24px;
     font-weight: bold;
@@ -14,12 +19,21 @@ const AdminSection = styled.section`
     margin: 20px 0 50px 20px;
     padding-left: 15px;
   }
-  div {
+
+  .admin_box {
+    width: 400px;
+  }
+
+  .item_list {
     display: flex;
     align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
   }
   span {
     display: block;
+    flex-basis: 100px;
   }
 
   label {
@@ -29,6 +43,7 @@ const AdminSection = styled.section`
     cursor: pointer;
     width: 50px;
     height: 50px;
+    border-radius: 6px;
     display: block;
     background-color: grey;
     background-image: url("http://superkts.com/img/css/bg0426.gif");
@@ -39,6 +54,17 @@ const AdminSection = styled.section`
   #file {
     display: none;
   }
+  .picture_button {
+    font-size: 0.75rem;
+    align-items: fiex-end;
+    margin-left: 10px;
+    background-color: #383838;
+    color: #fff;
+    padding: 3px 5px;
+  }
+
+  button {
+  }
 `;
 
 function Admin() {
@@ -47,30 +73,32 @@ function Admin() {
       <AdminSection>
         <section>
           <h1>내 정보</h1>
-          <div>
-            <span>사진</span>
-            <input id="file" type="file" accept="image/*" />
-            <label for="file">
-              <div className="imgUrl"></div>
-            </label>
-            <button>사진 내리기</button>
-          </div>
-          <div>
-            <span>이메일</span>
-            <p>rlaehdals753@naver.com</p>
-          </div>
-          <div>
-            <span>이름</span>
-            <input type="text" />
-          </div>
-          <div>
-            <span>소개</span>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <div>
-            <button></button>
-            <button></button>
-          </div>
+          <form className="admin_box" action="">
+            <div className="item_list">
+              <span>사진</span>
+              <input id="file" type="file" accept="image/*" />
+              <label for="file">
+                <div className="imgUrl"></div>
+              </label>
+              <button className="picture_button">사진 내리기</button>
+            </div>
+            <div className="item_list">
+              <span>이메일</span>
+              <p>rlaehdals753@naver.com</p>
+            </div>
+            <div className="item_list">
+              <span>이름</span>
+              <input type="text" />
+            </div>
+            <div className="item_list">
+              <span>소개</span>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div className="item_list">
+              <button>저장하기</button>
+              <button>로그아웃</button>
+            </div>
+          </form>
         </section>
       </AdminSection>
     </>
