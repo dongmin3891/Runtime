@@ -62,8 +62,15 @@ const AdminSection = styled.section`
     color: #fff;
     padding: 3px 5px;
   }
-
+  .button_save {
+    color: yellowgreen;
+  }
+  .button_logout {
+    color: red;
+  }
   button {
+    cursor: pointer;
+    border-radius: 6px;
   }
 `;
 
@@ -95,8 +102,8 @@ function Admin() {
               <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
             <div className="item_list">
-              <button>저장하기</button>
-              <button>로그아웃</button>
+              <button className="button_save">저장하기</button>
+              <button className="button_logout">로그아웃</button>
             </div>
           </form>
         </section>
