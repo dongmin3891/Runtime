@@ -59,7 +59,7 @@ const AdminSection = styled.section`
     align-items: fiex-end;
     margin-left: 10px;
     background-color: #383838;
-    color: #fff;
+
     padding: 3px 5px;
   }
   .button_save {
