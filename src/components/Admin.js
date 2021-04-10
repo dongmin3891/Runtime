@@ -98,11 +98,23 @@ function Admin() {
             </div>
             <div className="item_list">
               <span>이름</span>
-              <input type="text" />
+              <input
+                name="name"
+                type="text"
+                placeholder="이름을 입력하세요"
+                maxLength="10"
+              />
             </div>
             <div className="item_list">
               <span>소개</span>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea
+                name="message"
+                placeholder="소개를 해주세요"
+                maxLength="40"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
             </div>
             <div className="item_list">
               <button className="button_save" type="submit">
