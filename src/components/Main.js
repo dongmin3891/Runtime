@@ -74,7 +74,7 @@ function Main() {
               </Link>
             </li>
             <li className="home_item1">
-              <Link to="/" className="link">
+              <Link to="/Item" className="link">
                 <FontAwesomeIcon icon={faArchive} size="3x" />
                 <h3>상품보기</h3>
               </Link>
