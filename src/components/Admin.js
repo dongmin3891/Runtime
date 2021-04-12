@@ -12,7 +12,7 @@ const AdminSection = styled.section`
     display: block;
   }
 
-  h1 {
+  h2 {
     font-size: 24px;
     font-weight: bold;
     border-left: 3px solid #ff4e00;
@@ -82,7 +82,7 @@ function Admin() {
     <>
       <AdminSection>
         <section>
-          <h1>내 정보</h1>
+          <h2>내 정보</h2>
           <form className="admin_box" action="">
             <div className="item_list">
               <span>사진</span>
