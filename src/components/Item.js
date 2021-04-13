@@ -20,6 +20,53 @@ function Item() {
       <section>
         <h2>상품</h2>
       </section>
+
+      <ul>
+        <li>
+          <div>
+            <img src="" alt="" />
+            <span>1</span>
+            <span>100,000</span>
+            <button>
+              <img src="" alt="" />
+              <span>담기</span>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="" alt="" />
+            <span>1</span>
+            <span>100,000</span>
+            <button>
+              <img src="" alt="" />
+              <span>담기</span>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="" alt="" />
+            <span>1</span>
+            <span>100,000</span>
+            <button>
+              <img src="" alt="" />
+              <span>담기</span>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="" alt="" />
+            <span>1</span>
+            <span>100,000</span>
+            <button>
+              <img src="" alt="" />
+              <span>담기</span>
+            </button>
+          </div>
+        </li>
+      </ul>
     </ItemSection>
   );
 }
