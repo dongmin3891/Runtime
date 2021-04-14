@@ -20,7 +20,6 @@ function Item() {
       <section>
         <h2>상품</h2>
       </section>
-
       <ul>
         <li>
           <div>
@@ -65,6 +64,20 @@ function Item() {
               <span>담기</span>
             </button>
           </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <button>1</button>
+        </li>
+        <li>
+          <button>2</button>
+        </li>
+        <li>
+          <button>3</button>
+        </li>
+        <li>
+          <button>4</button>
         </li>
       </ul>
     </ItemSection>
