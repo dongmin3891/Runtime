@@ -4,6 +4,9 @@ import styled from "styled-components";
 const ItemSection = styled.section`
   margin: 120px 120px;
 
+  * {
+    box-sizing: border-box;
+  }
   /* main title */
   h2 {
     font-size: 24px;
@@ -11,6 +14,16 @@ const ItemSection = styled.section`
     border-left: 3px solid #ff4e00;
     margin: 20px 0 50px 20px;
     padding-left: 15px;
+  }
+  ul {
+    display: flex;
+  }
+  .item__list {
+    border: 1px solid #ddd;
+  }
+
+  span {
+    display: block;
   }
 `;
 
@@ -21,10 +34,10 @@ function Item() {
         <h2>상품</h2>
       </section>
       <ul>
-        <li>
+        <li className="item__list">
           <div>
             <img src="" alt="" />
-            <span>1</span>
+            <span>나이키</span>
             <span>100,000</span>
             <button>
               <img src="" alt="" />
@@ -32,10 +45,10 @@ function Item() {
             </button>
           </div>
         </li>
-        <li>
+        <li className="item__list">
           <div>
             <img src="" alt="" />
-            <span>1</span>
+            <span>에어맥스</span>
             <span>100,000</span>
             <button>
               <img src="" alt="" />
@@ -43,10 +56,10 @@ function Item() {
             </button>
           </div>
         </li>
-        <li>
+        <li className="item__list">
           <div>
             <img src="" alt="" />
-            <span>1</span>
+            <span>에어포스</span>
             <span>100,000</span>
             <button>
               <img src="" alt="" />
@@ -54,10 +67,10 @@ function Item() {
             </button>
           </div>
         </li>
-        <li>
+        <li className="item__list">
           <div>
             <img src="" alt="" />
-            <span>1</span>
+            <span>운동화</span>
             <span>100,000</span>
             <button>
               <img src="" alt="" />
