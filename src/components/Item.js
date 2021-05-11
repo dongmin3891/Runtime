@@ -27,13 +27,36 @@ const ItemSection = styled.section`
     margin-left: 20px;
   }
   .item__box {
+    padding: 15px;
     width: 300px;
     height: 450px;
   }
   .item__img {
     width: 100%;
   }
-
+  .item__name {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 18px;
+  }
+  .item__price {
+    margin: 15px 0;
+    font-size: 15px;
+    color: yellowgreen;
+  }
+  .item__put__btn {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    width: 60px;
+    height: 40px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+  }
+  .item__put {
+  }
   span {
     display: block;
   }
@@ -53,11 +76,10 @@ function Item() {
               className="item__img"
               alt="에어 맥스2"
             />
-            <span>에어 맥스2</span>
-            <span>129,000</span>
-            <button>
-              <img src="" alt="" />
-              <span>담기</span>
+            <span className="item__name">에어 맥스2</span>
+            <span className="item__price">129,000 원</span>
+            <button className="item__put__btn">
+              <span className="item__put">담기</span>
             </button>
           </div>
         </li>
@@ -68,11 +90,10 @@ function Item() {
               className="item__img"
               alt=""
             />
-            <span>에어 맥스97</span>
-            <span>100,000</span>
-            <button>
-              <img src="" alt="" />
-              <span>담기</span>
+            <span className="item__name">에어 맥스97</span>
+            <span className="item__price">100,000 원</span>
+            <button className="item__put__btn">
+              <span className="item__put">담기</span>
             </button>
           </div>
         </li>
@@ -83,11 +104,10 @@ function Item() {
               className="item__img"
               alt="에어 포스1"
             />
-            <span>에어 포스1</span>
-            <span>100,000</span>
-            <button>
-              <img src="" alt="" />
-              <span>담기</span>
+            <span className="item__name">에어 포스1</span>
+            <span className="item__price">130,000 원</span>
+            <button className="item__put__btn">
+              <span className="item__put">담기</span>
             </button>
           </div>
         </li>
@@ -98,11 +118,10 @@ function Item() {
               className="item__img"
               alt=""
             />
-            <span>에어 포스 1 쉐도우</span>
-            <span>100,000</span>
-            <button>
-              <img src="" alt="" />
-              <span>담기</span>
+            <span className="item__name">에어 포스 1 쉐도우</span>
+            <span className="item__price">200,000 원</span>
+            <button className="item__put__btn">
+              <span className="item__put">담기</span>
             </button>
           </div>
         </li>
@@ -113,27 +132,26 @@ function Item() {
               className="item__img"
               alt="에어 포스2"
             />
-            <span>에어 포스2</span>
-            <span>100,000</span>
-            <button>
-              <img src="" alt="" />
-              <span>담기</span>
+            <span className="item__name">에어 포스2</span>
+            <span className="item__price">300,000원</span>
+            <button className="item__put__btn">
+              <span className="item__put">담기</span>
             </button>
           </div>
         </li>
       </ul>
-      <ul>
-        <li>
-          <button>1</button>
+      <ul className="order__list">
+        <li className="order__items">
+          <button className="order__items__btn">1</button>
         </li>
         <li>
-          <button>2</button>
+          <button className="order__items__btn">2</button>
         </li>
         <li>
-          <button>3</button>
+          <button className="order__items__btn">3</button>
         </li>
         <li>
-          <button>4</button>
+          <button className="order__items__btn">4</button>
         </li>
       </ul>
     </ItemSection>
