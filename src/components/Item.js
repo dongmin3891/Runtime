@@ -57,6 +57,23 @@ const ItemSection = styled.section`
   }
   .item__put {
   }
+
+  .order__list {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .order__items {
+    margin-right: 10px;
+  }
+  .order__items__btn {
+    width: 30px;
+    height: 30px;
+    border-color: blue;
+    border-radius: 14px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+  }
   span {
     display: block;
   }
@@ -144,13 +161,13 @@ function Item() {
         <li className="order__items">
           <button className="order__items__btn">1</button>
         </li>
-        <li>
+        <li className="order__items">
           <button className="order__items__btn">2</button>
         </li>
-        <li>
+        <li className="order__items">
           <button className="order__items__btn">3</button>
         </li>
-        <li>
+        <li className="order__items">
           <button className="order__items__btn">4</button>
         </li>
       </ul>
