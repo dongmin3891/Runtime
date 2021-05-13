@@ -80,7 +80,7 @@ function Main() {
               </Link>
             </li>
             <li className="home_item1">
-              <Link to="/" className="link">
+              <Link to="/Cart" className="link">
                 <FontAwesomeIcon icon={faShoppingCart} size="3x" />
                 <h3>장바구니</h3>
               </Link>

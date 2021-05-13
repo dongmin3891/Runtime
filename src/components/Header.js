@@ -66,7 +66,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="link">
+            <Link to="/Cart" className="link">
               장바구니
             </Link>
           </li>
