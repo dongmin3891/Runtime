@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import item from "../shoes";
 
 const ItemSection = styled.section`
   margin: 120px 120px;
@@ -80,8 +81,13 @@ const ItemSection = styled.section`
 `;
 
 function Item() {
+
+  console.log(item);
+
   return (
     <ItemSection>
+
+
       <section>
         <h2>상품</h2>
       </section>

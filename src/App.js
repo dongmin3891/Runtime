@@ -1,10 +1,10 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Admin from "./Components/Admin";
-import Item from "./Components/Item";
-import Cart from "./Components/Cart";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Admin from "./components/Admin";
+import Item from "./components/Item";
+import Cart from "./components/Cart";
 import { Route } from "react-router";
 
 function App() {
